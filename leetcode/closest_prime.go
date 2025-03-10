@@ -1,33 +1,26 @@
 package main
 
-import "fmt"
-
-func closestPrimes(left int, right int) []int {
-	res := []int{}
-	var counter int
-	primeNumber := []int{}
-
-
-	for i := left; i <= right; i++ {
-		counter = 0
-		for j := 1; j <= i; j++ {
-			if i%j == 0 {
-				counter++
-			}
-		}
-		if counter == 2 {
-			primeNumber = append(primeNumber, i)
-			// isPrime = append(isPrime, true)
+func IsPrime(num int) bool {
+	if num < 2 {
+		return false
+	}
+	if num == 2 {
+		return true
+	}
+	for i := 2; i*i <= num; i++ {
+		if num%i == 0 {
+			return false
 		}
 	}
+	return true
+}
 
-	minGap := right - left
+func ClosestPrimes(left int, right int) []int {
+	primeNumber := []int{}
 
-	for i := 0; i < len(primeNumber)-1; i++ {
-		gap := primeNumber[i+1] - primeNumber[i]
-		if gap < minGap {
-			minGap = gap
-			res = []int{primeNumber[i], primeNumber[i+1]}
+	for i := left; i <= right; i++ {
+		if IsPrime(i) {
+			primeNumber = append(primeNumber, i)
 		}
 	}
 
@@ -35,10 +28,19 @@ func closestPrimes(left int, right int) []int {
 		return []int{-1, -1}
 	}
 
+    minGap := int(^uint(0) >> 1)
+    res := []int{}
+
+    for i := 0; i < len(primeNumber)-1; i++ {
+        gap := primeNumber[i+1] - primeNumber[i]
+        if gap < minGap {
+            minGap = gap
+            res = []int{primeNumber[i], primeNumber[i+1]}
+        }
+    }
+
 	return res
 
 }
 
-func main() {
-	fmt.Println(closestPrimes(10, 19))
-}
+

@@ -1,8 +1,8 @@
 package main
 
-import "fmt"
 
-func findClosestNumber(nums []int) int {
+
+func FindClosestNumber(nums []int) int {
 	gap := make([]int, len(nums))
 	for i, num := range nums {
 		if num < 0 {
@@ -22,6 +22,3 @@ func findClosestNumber(nums []int) int {
 	return nums[index]
 }
 
-func main() {
-	fmt.Println(findClosestNumber([]int{2, -1, 1}))
-}
