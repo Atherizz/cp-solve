@@ -35,7 +35,7 @@ func (s *Stack) Size() int {
 	return len(s.items)
 }
 
-func isValid(s string) bool {
+func IsValid(s string) bool {
 	data := Stack{
 		items: []rune{},
 	}
@@ -58,4 +58,3 @@ func isValid(s string) bool {
 
 	return data.IsEmpty()
 }
-

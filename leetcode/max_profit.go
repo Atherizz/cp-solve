@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func maxProfit(prices []int) int {
 
 	minPrice := int(^uint(0) >> 1)
@@ -21,6 +19,3 @@ func maxProfit(prices []int) int {
 
 }
 
-func main() {
-	fmt.Println(maxProfit([]int{7,6,4,3,1}))
-}
