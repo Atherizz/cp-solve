@@ -29,15 +29,6 @@ func (this *MinStack) Pop() int {
 	}
 }
 
-func (this *MinStack) Peek() int {
-	if len(this.items) == 0 {
-		return -1
-	} else {
-		item := this.items[len(this.items)-1]
-		return item
-	}
-}
-
 func (this *MinStack) GetMin() int {
 	if len(this.minItems) == 0 {
 		return -1
@@ -47,10 +38,10 @@ func (this *MinStack) GetMin() int {
 }
 
 func (this *MinStack) Top() int {
-	if len(this.minItems) == 0 {
+	if len(this.items) == 0 {
 		return -1
 	} else {
-		return this.minItems[0]
+		return this.items[len(this.items)-1]
 	}
 }
 
