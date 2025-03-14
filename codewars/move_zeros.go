@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func MoveZeros(arr []int) []int {
 	var temp int
 
@@ -15,8 +13,4 @@ func MoveZeros(arr []int) []int {
 		}
 	}
 	return arr
-}
-
-func main() {
-	fmt.Println(MoveZeros([]int{1, 2, 0, 1, 0, 1, 0, 3, 0, 1}))
 }
