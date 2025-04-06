@@ -22,4 +22,5 @@ func binarySearch(arr []int, target int) int {
 
 func main() {
 	fmt.Println(binarySearch([]int{3, 7, 12, 18, 22, 27, 31, 35, 39, 43, 47, 52, 58, 63, 68, 73, 79, 84, 91, 98}, 35))
+
 }
