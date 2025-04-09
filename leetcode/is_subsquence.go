@@ -1,6 +1,5 @@
 package main
 
-import "fmt"
 
 func isSubsequence(s string, t string) bool {
 	i, j := 0, 0
@@ -14,6 +13,3 @@ func isSubsequence(s string, t string) bool {
 	return (len(s)) == i
 }
 
-func main() {
-	fmt.Println(isSubsequence("abc", "ahbgd"))
-}

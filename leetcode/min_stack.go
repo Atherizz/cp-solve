@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type MinStack struct {
 	items    []int
 	minItems []int
@@ -54,14 +52,14 @@ func (this *MinStack) Top() int {
  * param_4 := obj.GetMin();
  */
 
-func main() {
-	data := Constructor()
-	data.Push(-2)
-	data.Push(0)
-	data.Push(-3)
-	fmt.Println(data.GetMin())
-	data.Pop()
-	fmt.Println(data.Top())
-	fmt.Println(data.GetMin())
+// func main() {
+// 	data := Constructor()
+// 	data.Push(-2)
+// 	data.Push(0)
+// 	data.Push(-3)
+// 	fmt.Println(data.GetMin())
+// 	data.Pop()
+// 	fmt.Println(data.Top())
+// 	fmt.Println(data.GetMin())
 
-}
+// }

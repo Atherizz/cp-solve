@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func generate(numRows int) [][]int {
 	pascal := make([][]int, numRows)
 
@@ -15,6 +13,3 @@ func generate(numRows int) [][]int {
 	return pascal
 }
 
-func main() {
-	fmt.Println(generate(5))
-}

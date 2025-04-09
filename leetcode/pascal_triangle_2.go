@@ -1,6 +1,5 @@
 package main
 
-import "fmt"
 
 func getRow(rowIndex int) []int {
 
@@ -18,6 +17,3 @@ func getRow(rowIndex int) []int {
 
 }
 
-func main() {
-	fmt.Println(getRow(4))
-}
