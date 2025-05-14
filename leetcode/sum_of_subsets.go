@@ -7,7 +7,6 @@ func SumOfSubsets(set []int, target int) [][]int {
 	var path []int
 	sumRemaining := sum(set)
 	recursiveSubset(0, 0, sumRemaining, set, target, &path, &results)
-
 	return results
 }
 

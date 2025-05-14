@@ -1,5 +1,6 @@
 package main
 
+// import "fmt"
 
 func insertionSort(arr []int) []int {
 	temp := 0
@@ -16,4 +17,7 @@ func insertionSort(arr []int) []int {
 	return arr
 }
 
-
+// func main() {
+// 	res := insertionSort([]int{9, 1, 8, 2, 7, 3, 6, 4, 5})
+// 	fmt.Println(res)
+// }
