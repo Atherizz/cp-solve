@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func selectionSort(arr []int) []int {
 	length := len(arr)
@@ -36,6 +36,6 @@ func selectionSortDesc(arr []int) []int {
 	return arr
 }
 
-func main() {
-	fmt.Println(selectionSortDesc([]int{9, 1, 8, 2, 7, 3, 6, 4, 5}))
-}
+// func main() {
+// 	fmt.Println(selectionSortDesc([]int{9, 1, 8, 2, 7, 3, 6, 4, 5}))
+// }

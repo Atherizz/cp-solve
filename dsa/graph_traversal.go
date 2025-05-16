@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func BFS(graph map[int][]int, start int) []int {
 	visited := make(map[int]bool)
@@ -50,24 +50,23 @@ func BFS(graph map[int][]int, start int) []int {
 
 // }
 
-func main() {
-	graph := map[int][]int{
-		1: {2, 3},
-		2: {4, 5},
-		3: {6},
-		4: {},
-		5: {7},
-		6: {},
-		7: {},
-	}
-	fmt.Println(BFS(graph, 1))
-	fmt.Println(DFS(graph,1))
+// func main() {
+// 	graph := map[int][]int{
+// 		1: {2, 3},
+// 		2: {4, 5},
+// 		3: {6},
+// 		4: {},
+// 		5: {7},
+// 		6: {},
+// 		7: {},
+// 	}
+// 	fmt.Println(BFS(graph, 1))
+// 	fmt.Println(DFS(graph,1))
 
-	// visited := make(map[int]bool)
-	// result := []int{}
+// 	// visited := make(map[int]bool)
+// 	// result := []int{}
 	
 
-	// DFSRecursive(graph, 1, visited, &result)
-	// fmt.Println("DFS Recursive Result:", result)
+// 	// DFSRecursive(graph, 1, visited, &result)
+// 	// fmt.Println("DFS Recursive Result:", result)
 
-}
