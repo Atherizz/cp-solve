@@ -2,7 +2,7 @@ package main
 
 // import "fmt"
 
-func binarySearch(arr []int, target int) int {
+func BinarySearch(arr []int, target int) int {
 	low := 0
 	high := len(arr) - 1
 

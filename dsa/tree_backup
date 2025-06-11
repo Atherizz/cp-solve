@@ -1,0 +1,51 @@
+// func (t *BstTree) Insert(data int) {
+// 	if t.IsEmpty() {
+// 		t.Root = &TreeNode{Data: data}
+// 		return
+// 	}
+
+// 	current := t.Root
+
+// 	for {
+// 		if data < current.Data {
+// 			if current.Left == nil {
+// 				current.Left = &TreeNode{Data: data}
+// 				return
+// 			}
+// 			current = current.Left
+// 		} else if data > current.Data {
+// 			if current.Right == nil {
+// 				current.Right = &TreeNode{Data: data}
+// 				return
+// 			}
+// 			current = current.Right
+// 		} else {
+// 			return
+// 		}
+// 	}
+// }
+
+// func (t *BstTree) Find(data int) bool {
+// 	if t.IsEmpty() {
+// 		return false
+// 	}
+
+// 	current := t.Root
+// 	for current != nil {
+// 		if data == current.Data {
+// 			return true
+// 		} else if data < current.Data {
+// 			if current.Left == nil {
+// 				return false
+// 			}
+// 			current = current.Left
+// 		} else if data > current.Data {
+// 			if current.Right == nil {
+// 				return false
+// 			}
+// 			current = current.Right
+// 		}
+// 	}
+
+// 	return false
+// }
