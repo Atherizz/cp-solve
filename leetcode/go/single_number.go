@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func singleNumber(nums []int) int {
 	data := make(map[int]int)
@@ -18,6 +18,6 @@ func singleNumber(nums []int) int {
 	return 0
 }
 
-func main() {
-	fmt.Println(singleNumber([]int{4,1,2,1,2}))
-}
+// func main() {
+// 	fmt.Println(singleNumber([]int{4,1,2,1,2}))
+// }

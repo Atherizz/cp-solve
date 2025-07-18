@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 	"strings"
@@ -131,9 +130,9 @@ func Calculate(postfix string) int {
 	return stack.Pop()
 }
 
-func main() {
-	postfix := Postfix("2+14*(9-5)/3")
-	// postfix := Postfix("3+-2")
-	fmt.Println(postfix)
-	fmt.Println(Calculate(postfix))
-}
+// func main() {
+// 	postfix := Postfix("2+14*(9-5)/3")
+// 	// postfix := Postfix("3+-2")
+// 	fmt.Println(postfix)
+// 	fmt.Println(Calculate(postfix))
+// }

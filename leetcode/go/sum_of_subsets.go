@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func SumOfSubsets(set []int, target int) [][]int {
 	var results [][]int
@@ -36,6 +36,7 @@ func sum(arr []int) int {
 	}
 	return sum
 }
-func main() {
-	fmt.Println(SumOfSubsets([]int{5, 10, 12, 13, 15, 18}, 30))
-}
+
+// func main() {
+// 	fmt.Println(SumOfSubsets([]int{5, 10, 12, 13, 15, 18}, 30))
+// }
